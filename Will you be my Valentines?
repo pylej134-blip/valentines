@@ -1,19 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Important Question 💘</title>
+
   <style>
     body {
       font-family: Arial, sans-serif;
       text-align: center;
-      margin-top: 100px;
       background: #fff0f5;
+      height: 100vh;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    h1 {
+      margin-top: 100px;
     }
 
     button {
       font-size: 18px;
-      padding: 12px 25px;
-      margin: 20px;
+      padding: 14px 28px;
       border-radius: 10px;
       border: none;
       cursor: pointer;
@@ -22,14 +29,18 @@
     #yes {
       background-color: #ff4d6d;
       color: white;
+      margin-right: 20px;
     }
 
     #no {
       background-color: #aaa;
       position: absolute;
+      left: 55%;
+      top: 250px;
     }
   </style>
 </head>
+
 <body>
 
   <h1>Will you be my Valentine? 💘</h1>
@@ -46,8 +57,8 @@
     const noBtn = document.getElementById("no");
 
     noBtn.addEventListener("mouseover", () => {
-      const x = Math.random() * (window.innerWidth - 100);
-      const y = Math.random() * (window.innerHeight - 50);
+      const x = Math.random() * (window.innerWidth - 120);
+      const y = Math.random() * (window.innerHeight - 60);
       noBtn.style.left = x + "px";
       noBtn.style.top = y + "px";
     });
